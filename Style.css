@@ -1,0 +1,316 @@
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFAEE;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    background-color: #800000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #a83232;
+    transform: scale(1.05);
+}
+
+/* ================= HEADER ================= */
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* ================= SECTION UMUM ================= */
+.section {
+    max-width: 75%;
+    margin: 15px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 120px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #b30000;
+    margin-bottom: 15px;
+}
+
+/* ================= HIGHLIGHTED SECTION ================= */
+.highlight-link {
+    text-decoration: none;
+}
+
+.highlight-section {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #A62C2C;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.highlight-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.highlight-link:hover .highlight-section {
+    background-color: #8b1f1f;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* ================= QUIZ ================= */
+.quiz-section {
+    text-align: center;
+    margin: 50px auto;
+    font-weight: bolder;
+}
+
+.quiz-link a {
+    background-color: #8D5F8C;
+    color: white;
+    padding: 50px 35%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quiz-link a:hover {
+    background-color: #6B3F69;
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #b30000;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Layout foto + teks */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.group-photo {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.05em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsif */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    .about-text {
+        flex: 1;
+    }
+}
+
+/* ================= MEMBERS LIST ================= */
+.members {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.members h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #800000;
+    text-align: left;
+}
+
+.member-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+}
+
+.member {
+    background: #f4f4f4;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #333;
+    width: 97%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+}
+
+/* ================= MATERI PAGE (makna.html & fakta.html) ================= */
+.materi-page {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.materi-page h2 {
+    color: #b30000;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.materi-page p, 
+.materi-page ul {
+    font-size: 1.05em;
+    color: #444;
+    line-height: 1.7;
+}
+
+.materi-page ul {
+    padding-left: 25px;
+}
+
+.materi-page li {
+    margin-bottom: 10px;
+}
+
+/* Tombol Back */
+.back-btn {
+    display: inline-block;
+    background: #b30000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 20px; /* beri jarak dari logo */
+}
+
+.back-btn:hover {
+    background: #ff0202;
+    transform: translateX(-3px);
+}
+/* ================= FAKTA UNIK PAGE ================= */
+.fakta-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fakta-list li {
+    background: #f4f4f4;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 22px;
+}
+
+.jawa{
+    text-align: center;
+}
+.jawa2{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.asep{
+    margin-top: 0%;
+}
+
+.Vmakna{
+   text-align: center;
+}
+
+.jarak{
+
+    margin-top: 20px;
+}
